@@ -1,0 +1,17 @@
+    <div>
+        <h1 id="msg"></h1>
+    </div>
+    
+    <script>
+        var sum = 0;
+            function addSum(num) {
+                sum = sum + num;
+                return sum;
+            }
+            var returnedValue = addSum(2); // sum will be modified but returned value is undefined
+
+            // $('#msg').html(returnedValue);
+            console.log(returnedValue);
+            document.getElementById("msg").innerHTML= returnedValue;
+                
+    </script>
